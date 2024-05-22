@@ -76,25 +76,37 @@ twoNumbers(2, 12);
 const twoArrays = () => {
   const arrayA = [];
   const arrayB = [];
-  for (let counter = 0; counter <= 5; counter++) {
-    const randomA = Math.floor(Math.random() * counter.length);
-    const randomB = Math.floor(Math.random() * counter.length);
+  for (let counter = 0; counter < 5; counter++) {
+    const randomA = Math.floor(Math.random() * 10);
+    const randomB = Math.floor(Math.random() * 10);
+    arrayA.push(randomA);
+    arrayB.push(randomB);
   }
-};
-
-
-//- Crea una función que reciba un número y te diga si es primo o no. Un número primo es aquel que sólo puede dividirse por si mismo Y UNO
-
-// X % X === 0 
-
-const primeNumber = () =>{
-  for (let counter=0;counter<=primeNumber;counter++){
-    if (primeNumber%primeNumber===0 && primeNumber%1===0 ) {
-      console.log(`El número ${primeNumber} es primo`);
-    } 
-    else {
-      console.log(`El número ${primeNumber} NO es primo`);
+  for (let counter = 0; counter < arrayA.length; counter++) {
+    if (arrayA.includes(arrayB[counter])) {
+      console.log(`El número ${arrayB[counter]} se repite en los dos arrays.`);
     }
   }
 };
-primeNumber (7);
+twoArrays();
+
+//- Crea una función que reciba un número y te diga si es primo o no. Un número primo es aquel que sólo puede dividirse por si mismo Y UNO
+
+// X % X === 0
+
+const primerNumber = number => {
+  if (number <= 1 || number % 2 === 0) {
+    console.log(`${number} no es primo`);
+    return;
+  }
+  for (let counter = 2; counter < number; counter++) {
+    if (number % counter === 0) {
+      console.log(`${number} no es primo`);
+      return;
+    }
+  }
+  console.log(`${number} es primo`);
+};
+primerNumber(7);
+
+//- Crea una función que reciba un array de 10 números, imprime por consola cada número, su cuadrado y su cubo en este formato:"Número: 2 - Cuadrado: 4 - Cubo: 8".Nota: Dentro del objeto Math existe el método pow. Math.pow(número, exponente)
