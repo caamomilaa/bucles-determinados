@@ -77,7 +77,24 @@ const twoArrays = () => {
   const arrayA = [];
   const arrayB = [];
   for (let counter = 0; counter <= 5; counter++) {
-    const randomA = ;
-    const randomB = ;
+    const randomA = Math.floor(Math.random() * counter.length);
+    const randomB = Math.floor(Math.random() * counter.length);
   }
 };
+
+
+//- Crea una función que reciba un número y te diga si es primo o no. Un número primo es aquel que sólo puede dividirse por si mismo Y UNO
+
+// X % X === 0 
+
+const primeNumber = () =>{
+  for (let counter=0;counter<=primeNumber;counter++){
+    if (primeNumber%primeNumber===0 && primeNumber%1===0 ) {
+      console.log(`El número ${primeNumber} es primo`);
+    } 
+    else {
+      console.log(`El número ${primeNumber} NO es primo`);
+    }
+  }
+};
+primeNumber (7);
