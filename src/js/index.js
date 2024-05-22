@@ -77,7 +77,6 @@ const twoArrays = () => {
   const arrayA = [];
   const arrayB = [];
   for (let counter = 0; counter <= 5; counter++) {
-    const randomA = 
-    const randomB =
+
   }
 };
