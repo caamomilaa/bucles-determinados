@@ -110,3 +110,12 @@ const primerNumber = number => {
 primerNumber(7);
 
 //- Crea una función que reciba un array de 10 números, imprime por consola cada número, su cuadrado y su cubo en este formato:"Número: 2 - Cuadrado: 4 - Cubo: 8".Nota: Dentro del objeto Math existe el método pow. Math.pow(número, exponente)
+
+
+
+//- Crea una función que reciba una palabra e imprima por consola esa palabra pero con las vocales en mayúscula.
+
+const onlyVocals = (word) =>{
+  
+};
+onlyVocals ('camomila');
