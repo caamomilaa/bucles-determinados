@@ -116,6 +116,19 @@ primerNumber(7);
 //- Crea una función que reciba una palabra e imprima por consola esa palabra pero con las vocales en mayúscula.
 
 const onlyVocals = (word) =>{
-  
+  for (let counter= 0;counter<= word.length;counter++){
+    if (word [counter] === 'a','e','i','o','u'){
+      console.log(counter.toUpperCase(););
+    }
+  };
 };
 onlyVocals ('camomila');
+
+// - Crea una función que reciba una frase e imprima el número de veces que se repite cada vocal, por ejemplo para la frase "Enrique ordeña cabras", el resultado por consola debe ser:
+// a: 3,
+// e: 3,
+// i: 1,
+// o: 1,
+// u: 1
+
+const  
